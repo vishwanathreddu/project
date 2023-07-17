@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            outline: 0px;
+        }
+        .con{
+            width: 100%;
+            height: 100%;
+        }
+        .cont nav{
+            width: 100%;
+            height: 70px;
+            background-color: darkblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .cont nav img{
+            width: 60px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .sub3{
+            position: absolute;
+            top: 46px;
+            width: 145px;
+            height: 138px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sbm1{
+            text-decoration: none;
+        }
+        .sbm1:hover{
+            text-decoration: underline;
+        }
+        .sbm2{
+            text-decoration: none;
+        }
+        .sbm2:hover{
+            text-decoration: underline;
+        }
+        .sbm3{
+            text-decoration: none;
+        }
+        .sbm3:hover{
+            text-decoration: underline;
+        }
+        .sbm4{
+            text-decoration: none;
+        }
+        .sbm4:hover{
+            text-decoration: underline;
+        }
+        .sbm5{
+            text-decoration: none;
+        }
+        .sbm5:hover{
+            text-decoration: underline;
+        }
+        .sbm6{
+            text-decoration: none;
+        }
+        .sbm6:hover{
+            text-decoration: underline;
+        }
+        .sbm7{
+            text-decoration: none;
+        }
+        .sbm7:hover{
+            text-decoration: underline;
+        }
+        .sbm8{
+            text-decoration: none;
+        }
+        .sbm8:hover{
+            text-decoration: underline;
+        }
+        .sbm9{
+            text-decoration: none;
+        }
+        .sbm9:hover{
+            text-decoration: underline;
+        }
+        .sbm10{
+            text-decoration: none;
+        }
+        .sbm10:hover{
+            text-decoration: underline;
+        }
+        .sm3:hover .sub3{
+            background-color: gainsboro;
+            display: block;
+            z-index: 2;
+        }
+        .sub4{
+            position: absolute;
+            top: 46px;
+            width: 140px;
+            height: 50px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sm4:hover .sub4{
+            background-color: gainsboro;
+            display: block;
+            z-index: 3;
+        }
+        .sub6{
+            position: absolute;
+            top: 46px;
+            width: 110px;
+            height: 53px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+            
+        }
+        .sm6:hover .sub6{
+            background-color: gainsboro;
+            display: block;
+            z-index: 5;
+        }
+        .sub7{
+            position: absolute;
+            top: 46px;
+            width: 84px;
+            height: 53px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sbm1{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm2{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm3{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm4{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm5{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm6{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm7{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sm7:hover .sub7{
+            background-color: gainsboro;
+            display: block;
+            z-index: 5;
+        }
+        .sbm8{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm9{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm10{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .a2{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a2:hover{
+            text-decoration: underline;
+        }
+        .a3{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a3:hover{
+            text-decoration: underline;
+        }
+        .a4{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a4:hover{
+            text-decoration: underline;
+        }
+
+        .a5{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a5:hover{
+            text-decoration: underline;
+        }
+        .a6{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a6:hover{
+            text-decoration: underline;
+        }
+        .a7{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a7:hover{
+            text-decoration: underline;
+        }
+        .box{
+            margin: 20px;
+            margin-top: 40px;
+            width: 95%;
+            height: 90%;
+            border: 2px solid blue;
+            padding: 10px;
+            overflow: scroll;
+        }
+        .line{
+            margin-top: 20px;
+            width: 1585px;
+            height: 2px;
+            background-color:darkslateblue;
+            position: relative;
+        }
+        p{
+            color: red;
+            font-size: 16px;
+        }
+        table{
+            margin-top: 20px;
+            background-color: bisque;
+        }
+        tr:nth-child(even){
+            background-color: powderblue;
+        }
+        tr:nth-child(odd){
+            background-color: white;
+        }
+        .b1{
+            width: 57px;
+            height: 25px;
+            background-color: navy;
+            color: white;
+            border: 0px solid;
+            border-radius: 5px;
+            margin-left: 40px;
+        }
+        .t1{
+            margin-left: 30px;
+            margin-right: 100px;
+            width: 190px;
+            height: 24px;
+            border: 1px solid;
+            border-radius: 3px;
+            padding: 2px;
+        }
+        .t2{
+            margin-right: 80px;
+            width: 190px;
+            height: 24px;
+            border: 1px solid;
+            border-radius: 3px;
+            padding: 2px;
+        }
+        .t3{
+            margin: 5px;
+            width: 190px;
+            height: 24px;
+            border: 1px solid;
+            border-radius: 3px;
+            padding: 2px;
+        }
+        .foot{
+            background-color: darkblue;
+            height: 18vh;
+            width: 100%;
+            position: relative;
+            top: 5vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .foot a{
+            font-size: 17px;
+            margin-top: 20px;
+            color: lightyellow;
+            margin-top: 30px;
+        }
+        .foot .icon{
+            margin-top: 22px;
+            margin-right: 30px;
+        }
+        .fa-brands{
+            font-size: 20px;
+        }
+        .f1{
+            position: absolute;
+            padding-top: 20px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <nav>
+            <a href="project3.html" class="a1"><img src="Vili1.jpg" class="img2"/></a>
+            <a href="project3.html" class="a2">HOME</a>
+            <div class="sm3"><a href="#3"class="a3">SERVICES</a>
+                <div class="sub3">
+                        <a href="projcyberawer.html" class="sbm1">CYBER TIPS</a>
+                        <a href="projaware.html" class="sbm2">CYBER AWARENESS</a>
+                        <a href="projGallery.html" class="sbm3">GALLERY</a>
+                        <a href="#a4" class="sbm4">RESOURCES</a>
+                </div>
+            </div>
+            <div class="sm4"><a href="#a5" class="a5">REPORT</a>
+                <div class="sub4">
+                    <a href="projReport.html" class="sbm5">FINACIAL FRAUD</a>
+                    <a href="projReport.html" class="sbm6">CYBER FRAUD</a>
+                </div>
+            </div>
+            <a href="#a8" class="a5">ygsdcugk</a>
+            <div class="sm6"><a href="#a9" class="a6">ABOUT</a>
+                <div class="sub6">
+                    <a href="projAbout.html" class="sbm7">KNOW MORE</a>
+                    <a href="#a11" class="sbm8">BRANCHES</a>
+                </div>
+            </div>
+            <div class="sm7"><a href="#a12" class="a7">LOGIN/SIGNUP</a>
+                <div class="sub7">
+                    <a href="projLogin.html" class="sbm9">LOGIN</a>
+                    <a href="projReg.html" class="sbm10">SIGN UP</a>
+                </div>
+        </nav>
+        <div class="box">
+            <div class="con">
+                <input type="text" class="t1" placeholder="State Name">
+                <input type="text" class="t2" placeholder="Nodal Cyber Officer Name">
+                <input type="text" class="t3" placeholder="Grievance Officer Name">
+                <button class="b1">Search</button>
+                <div class="line"></div>
+            </div>
+            <p>Note: In the Email Column,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[at] indicates @ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[dot] indicates . &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[hyphen] indicates -</p>
+
+            <table border="1">
+                <tr style="background-color: black; color: white;">
+                    <th>SL. No.</th>
+                    <th>States/UT's</th>
+                    <th>Name</th>
+                    <th>Rank</th>
+                    <th>Email</th>
+                    <th>Name</th>
+                    <th>Rank</th>
+                    <th>Contact</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <th colspan="2"></th>
+                    <th colspan="3" style="background-color: darkorange;">Nodal Cyber cell Officer</th>
+                    <th colspan="4" style="background-color: palegreen;">Grievance Officer Details</th>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">1</td>
+                    <td>ANDAMAN & NICOBAR</td>
+                    <td>Shri Rajeev Ranjan,IPS</td>
+                    <td>SP(CID)</td>
+                    <td>spcid[dot]and[at]nic[dot]in</td>
+                    <td>Sh. Sanjay Kumar Tyagi, IPS</td>
+                    <td>DIGP(Intl.)</td>
+                    <td>8900910411</td>
+                    <td>digpint[hyphen]anp[at]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">2</td>
+                    <td>ANDHRA PRADESH</td>
+                    <td>Smt. KGV Saritha</td>	
+                    <td>SPWPC</td>	
+                    <td>spwpc_cid[at]ap[dot]gov[dot]in</td>	
+                    <td>Shri M.Sunil Kumar Naik IPS</td>	
+                    <td>DIG</td>	
+                    <td>0863-2340059</td>	
+                    <td>spwpccidap[at]gmail[dot]com</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">3</td>
+                    <td>ARUNACHAL PRADESH</td>
+                    <td>Sh. Rohit Rajbir Singh, IPS</td>
+                    <td>S.P (Crime & SIT)</td>
+                    <td>spsit[at]arupol[dot]nic[dot]in</td>
+                    <td>Sh. Take Ringu, IPS</td>
+                    <td>IGP (Crime)</td>
+                    <td>9436040703</td>
+                    <td>takeringu[at]ips[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">4</td>
+                    <td>ASSAM</td>
+                    <td>Mrs. Indrani Baruah, IPS</td>
+                    <td>DIGP</td>
+                    <td>digp[hyphen]cid[at]assampolice[dot]gov[dot]in</td>
+                    <td>Sh. Debaraj Upadhaya, IPS</td>
+                    <td>IGP,CID</td>
+                    <td>0361-2521618</td>
+                    <td>igp[hyphen]cid[at]assampolice[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">5</td>
+                    <td>BIHAR</td>
+                    <td>Shri. Sushil Kumar IPS</td>
+                    <td>SP</td>
+                    <td>cybercell[hyphen]bih[at]nic[dot]in</td>
+                    <td>Shri. Rajesh Tripathi</td>
+                    <td>SSP</td>
+                    <td>0612-2238098</td>
+                    <td>cybercell[hyphen]bih[at]nic[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">6</td>
+                    <td>CHANDIGARH</td>
+                    <td>Sh. Ketan Bansal, IPS</td>
+                    <td>SP/CCIC</td>
+                    <td>speowccic[at]gmail[dot]com</td>
+                    <td>Sh. Raj Kumar Singh, IPS</td>
+                    <td>IGP-UT</td>
+                    <td>0172-2749900</td>
+                    <td>dig[hyphen]chd[at]nic[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">7</td>
+                    <td>CHHATTISGARH</td>
+                    <td>Shri.Manish Sharma</td>
+                    <td>AIG</td>
+                    <td>aigtech[hyphen]phq[dot]cg[at]gov[dot]in</td>
+                    <td>Sh. Kavi Gupta</td>
+                    <td>Addl.SP</td>
+                    <td>9479191785</td>
+                    <td>cybercell[hyphen]phq[dot]cg[at]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">8</td>
+                    <td>DADRA & NAGAR HAVELI AND DAMAN & DIU</td>
+                    <td>Shri Amit Sharma, IPS</td>
+                    <td>SP</td>
+                    <td>phq[hyphen]dd[at]nic[dot]in</td>
+                    <td>Sh. Vikramjit Singh, IPS</td>
+                    <td>DIGP</td>
+                    <td>0260-2220140</td>
+                    <td>digp[hyphen]daman[hyphen]dd[at]nic[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">9</td>
+                    <td>DELHI</td>
+                    <td>Sh. Prashant Priya Gautam, IPS</td>
+                    <td>DCP</td>
+                    <td>ncrp[dot]delhi[at]delhipolice[dot]gov[dot]in</td>
+                    <td>Sh. B. Shanker Jaiswal</td>
+                    <td>JT.CP</td>
+                    <td>011-20892633</td>
+                    <td>addlcp[dot]cybertech[at]delhipolice[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">10</td>
+                    <td>GOA</td>
+                    <td>Sh.Nidhin Valsan, IPS</td>
+                    <td>SP, Cyber Crime,</td>
+                    <td>spcyber[at]goapolice[dot]gov[dot]in</td>
+                    <td>Sh. Paramaditya</td>
+                    <td>DIGP</td>
+                    <td>0832-2420883</td>
+                    <td>digpgoa[at]goapolice[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">11</td>
+                    <td>GUJARAT</td>
+                    <td>Sh. Subodh Odedra</td>
+                    <td>SP</td>
+                    <td>cc[hyphen]cid[at]gujarat[dot]gov[dot]in</td>
+                    <td>Sh. S.G. Trivedi</td>
+                    <td>IGP</td>
+                    <td>079-23250798</td>
+                    <td>cc[hyphen]cid[at]gujarat[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">12</td>
+                    <td>HARYANA</td>
+                    <td>Dr. Rajshree Singh, IPS</td>
+                    <td>IGP, SCB, GGM</td>
+                    <td>dspscbggn[at]gmail[dot]com</td>
+                    <td>Sh. Hamid Akhtar, IPS</td>
+                    <td>DIG SCB-I</td>
+                    <td>0172-2524058</td>
+                    <td>sp[hyphen]cybercrimephq[dot]pol[at]hry[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">13</td>
+                    <td>HIMACHAL PRADESH</td>
+                    <td>Sh. Rohit Malpani, IPS</td>
+                    <td>SP/Cyber Crime</td>
+                    <td>sp[hyphen]cybercr[hyphen]hp[at]nic[dot]in</td>
+                    <td>Sh. D. K. Chaudhary</td>
+                    <td>DIGP/Crime</td>
+                    <td>0177-2622205</td>
+                    <td>adgp[hyphen]cid[hyphen]hp[at]nic[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">14</td>
+                    <td>JAMMU & KASHMIR</td>
+                    <td>Sh Arun Kumar Choudhary	</td>
+                    <td>Spl. DGP</td>
+                    <td>igcrime[hyphen]jk[at]nic[dot]in</td>
+                    <td>Sh. RR Swan</td>
+                    <td>DGP</td>
+                    <td>0191-25822926</td>
+                    <td>adgpcidjk[at]jkpolice[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">15</td>
+                    <td>JHARKHAND</td>
+                    <td>Sh. S. Karthik</td>
+                    <td>S.P. Cyber Crime, CID</td>
+                    <td>cyberps[at]jhpolice[dot]gov[dot]in</td>
+                    <td>Sh. S. Karthik</td>
+                    <td>S.P. Cyber Crime, CID</td>
+                    <td>0651-2220060</td>
+                    <td>cyberps[at]jhpolice[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">16</td>
+                    <td>KARNATAKA</td>
+                    <td>Smt. Madhura Veena M.L. IPS</td>
+                    <td>Superintendent of Police</td>
+                    <td>spctrcid[at]ksp[dot]gov[dot]in</td>
+                    <td>Smt. Sarah Fathima IPS</td>
+                    <td>I/C DIGP CID</td>
+                    <td></td>
+                    <td>ccpwccid[at]ksp[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">17</td>
+                    <td>KERALA</td>
+                    <td>Sh Arvind Sukumar, IPS</td>
+                    <td>Superintendent of Police (ICT)</td>
+                    <td>spict[dot]pol[at]kerala[dot]gov[dot]in</td>
+                    <td>Sh Anup Kuruvilla John, IPS</td>
+                    <td>ADGP</td>
+                    <td>0471-2300042</td>
+                    <td>adgpscrb[dot]pol[at]kerala[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">18</td>
+                    <td>LADAKH</td>
+                    <td>Ms. Nilza Angmo</td>
+                    <td>DSP (IT) Cell</td>
+                    <td>itsec[hyphen]phq[at]police[dot]ladakh[dot]gov[dot]in</td>
+                    <td>Sh. Deepak Digra- JKPS</td>
+                    <td>SP (AIG CIV PHQ UT Ladakh)</td>
+                    <td>01982-260888</td>
+                    <td>aig[hyphen]civl[at]police[dot]ladakh[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">19</td>
+                    <td>LAKSHADWEEP</td>
+                    <td>Sh. Prakshay Kumar Singh DANIPS</td>
+                    <td>DSP (HQ)</td>
+                    <td>cctns[hyphen]lk[at]nic[dot]in</td>
+                    <td>Sh.Hareshwar V Swami, IPS</td>
+                    <td>SP (L&O)</td>
+                    <td>04896262258</td>
+                    <td>lak[hyphen]sop[at]nic[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">20</td>
+                    <td>MADHYA PRADESH</td>
+                    <td>Sh Niranjan B Vayangankar</td>
+                    <td>DIG, State Cyber Police</td>
+                    <td>niranjan[dot]vayangankar889[at]mppolice[dot]gov[dot]in	</td>
+                    <td>Shri Yogesh Deshmukh</td>
+                    <td>ADG, State Cyber Police</td>
+                    <td>0755-2770248</td>
+                    <td>adg[hyphen]cybercell[at]mppolice[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">21</td>
+                    <td>MAHARASHTRA</td>
+                    <td>Sh. Yashasvi Yadav</td>
+                    <td>Special IGP</td>
+                    <td>ig[dot]cbr[hyphen]mah[at]gov[dot]in</td>
+                    <td>Sh. Sanjay Vilas Shintre</td>
+                    <td>SP</td>
+                    <td>022-22160080</td>
+                    <td>sp[dot]cbr[hyphen]mah[at]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">22</td>
+                    <td>MANIPUR</td>
+                    <td>Sh. Hopson Sapam</td>
+                    <td>SP</td>
+                    <td>sp[hyphen]cybercrime[dot]mn[at]manipur[dot]gov[dot]in</td>
+                    <td>Sh. Ningshem Worngam</td>
+                    <td>DIGP (Int)</td>
+                    <td>0385-2444888</td>
+                    <td>grievance[dot]ncrp[at]gmail[dot]com</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">23</td>
+                    <td>MEGHALAYA</td>
+                    <td>Miss. Neena Rabha, MPS</td>
+                    <td>DSP, ACB/CCW</td>
+                    <td>ccw[hyphen]meg[at]gov[dot]in</td>
+                    <td>Dr Dara Aswaghosh, IPS</td>
+                    <td>SP (CID)</td>
+                    <td>9485115118</td>
+                    <td>sspcid[hyphen]meg[at]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">24</td>
+                    <td>MIZORAM</td>
+                    <td>Sh. Lalhuliana Fanai, IPS</td>
+                    <td>DIG (CID)</td>
+                    <td>digcid[hyphen]mz[at]mizoram[dot]gov[dot]in</td>
+                    <td>Sh Devesh Chandra Srivastava, IPS	</td>
+                    <td>DGP</td>
+                    <td>0389-2334682</td>
+                    <td>polmizo[at]rediffmail[dot]com</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">25</td>
+                    <td>NAGALAND</td>
+                    <td>Ms Roopa M., IPS</td>
+                    <td>IGP(CID)</td>
+                    <td>igpcrime[hyphen]ngl[at]nic[dot]in</td>
+                    <td>Sh. Sandeep M. Tamgadge, IPS</td>
+                    <td>ADGP (L&O)</td>
+                    <td>6009308003</td>
+                    <td>adgplo[dot]ngl[at]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">26</td>
+                    <td>ODISHA</td>
+                    <td>Sh. Bijay Kumar Mallik</td>
+                    <td>Dy S.P. Of Police (OPS)</td>
+                    <td>sp1cidcb[dot]orpol[at]nic[dot]in</td>
+                    <td>Sh.Sarthak Sarangi</td>
+                    <td>DIGP</td>
+                    <td>0671-2306071</td>
+                    <td>sp1cidcb[dot]orpol[at]nic[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">27</td>
+                    <td>PUDUCHERRY</td>
+                    <td>Sh. Narra Chaitanya, IPS</td>
+                    <td>SSP(Traffic)</td>
+                    <td>ssptraffic[at]py[dot]gov[dot]in</td>
+                    <td>Sh. Dr. VJ Chandran</td>
+                    <td>IGP</td>
+                    <td>0413-2231313</td>
+                    <td>igp[at]py[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">28</td>
+                    <td>PUNJAB</td>
+                    <td>Ms. Nilambari Jagadale, IPS</td>
+                    <td>DIG, Cyber Crime</td>
+                    <td>aigcc[at]punjabpolice[dot]gov[dot]in</td>
+                    <td>Sh. P. K. Sinha, IPS</td>
+                    <td>ADGP, Cyber Crime</td>
+                    <td>0172-2226258</td>
+                    <td>igp[dot]cyber[dot]c[dot]police[at]punjabpolice[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">29</td>
+                    <td>RAJASTHAN</td>
+                    <td>Shri Bhupendara Sahu</td>
+                    <td>Inspector General of Police</td>
+                    <td>igp[dot]cybercrime[at]rajpolice[dot]gov[dot]in</td>
+                    <td>Shri Bhuvan Bhushan Yadav</td>
+                    <td>Superintendent of Police</td>
+                    <td>0141-2821445</td>
+                    <td>sp[dot]cybercrime[at]rajpolice[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">30</td>
+                    <td>SIKKIM</td>
+                    <td>Sh. Kunzang Dorjee Shangdarpa</td>
+                    <td>DIGP</td>
+                    <td>spcid[at]sikkimpolice[dot]nic[dot]in</td>
+                    <td>Sh. Abhishek Dahal</td>
+                    <td>Police Inspector/CID</td>
+                    <td>8695622134</td>
+                    <td>cybercrime666sk[at]gmail[dot]com</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">31</td>
+                    <td>TAMIL NADU</td>
+                    <td>Tmt. Kingshlin</td>
+                    <td>SP(only for CCPWC)</td>
+                    <td>sp2cwc[at]gmail[dot]com</td>
+                    <td>Sh. D. Ashok Kumar</td>
+                    <td>SP(for OTHER CYBER CRIMES)</td>
+                    <td>044-29580300</td>
+                    <td>sp1[hyphen]ccdtnpolice[at]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">32</td>
+                    <td>TELANGANA</td>
+                    <td>Sh. S. Ranga Reddy, IPS</td>
+                    <td>Sh. S. Ranga Reddy, IPS</td>
+                    <td>ccps[dot]cid[at]tspolice[dot]gov[dot]in</td>
+                    <td>ccps[dot]cid[at]tspolice[dot]gov[dot]in</td>
+                    <td>DIGP, Women Safety Wing, CID</td>
+                    <td>040-23211966</td>
+                    <td>womensafety[hyphen]ts[at]tspolice[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">33</td>
+                    <td>TRIPURA</td>
+                    <td>Smt. Sudeshna Bhattacharyya, TPS</td>
+                    <td>SP (SCRB)</td>
+                    <td>spscrb[at]tripurapolice[dot]nic[dot]in</td>
+                    <td>Smt. Sudeshna Bhattacharyya, TPS</td>
+                    <td>Smt. Sudeshna Bhattacharyya, TPS</td>
+                    <td>Smt. Sudeshna Bhattacharyya, TPS</td>
+                    <td>spscrb[at]tripurapolice[dot]nic[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">34</td>
+                    <td>UTTARAKHAND</td>
+                    <td>Sh. Ayush Agarwal</td>
+                    <td>SSP/STF</td>
+                    <td>spstf[hyphen]uk[at]nic[dot]in</td>
+                    <td>Sh. Ayush Agarwal</td>
+                    <td>SSP/STF</td>
+                    <td>0135-2655900</td>
+                    <td>0135-2655900</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">35</td>
+                    <td>UTTAR PRADESH</td>
+                    <td>Shivhari Meena</td>
+                    <td>Shivhari Meena</td>
+                    <td>sp[hyphen]cyber[dot]lu[at]up[dot]gov[dot]in</td>
+                    <td>Sh.Subhash Chandra</td>
+                    <td>ADG</td>
+                    <td>0522-2390538</td>
+                    <td>adg[hyphen]cybercrime[dot]lu[at]up[dot]gov[dot]in</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">36</td>
+                    <td>WEST BENGAL</td>
+                    <td>Smt. Soma Das Mitra, IPS</td>
+                    <td>DIGP</td>
+                    <td>digcyber[at]cidwestbengal[dot]gov[dot]in</td>
+                    <td>Sh. Sunil Kumar Choudhary, IPS</td>
+                    <td>IGP</td>
+                    <td>033-24790255</td>
+                    <td>ig2[at]cidwestbegal[dot]gov[dot]in</td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <div class="foot">
+                <a class="sbm10" href="projContact.html">Agencies</a>
+                <a class="sbm11" href="#7">Operations</a>
+                <a class="sbm12" href="projReg.html">New to work</a>
+                <a class="sbm13" href="projFAQ.html">FAQ</a>
+                <a class="sbm14" href="projDisclaimer.html">Disclaimer</a>
+                <div class="icon">
+                    <a href="#a13"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#a14"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#a15"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#a16"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="f1">This website is Best viewed in Mozilla Firefox, Google Chrome.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1F989345</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t1" onblur="fun(this)"/>
+    <div>
+        <input class="con5" onkeyup="pwdval(this)"/>
+        <div class="con2">
+            <div id="d3">Atleast one Upper case</div>
+            <div id="d4">Atleast one lower case</div>
+            <div id="d5">Atleast one digit</div>
+            <div id="d6">Atleast one special symbol</div>
+            <div id="d7">Atleast 8 character</div>
+        </div>
+    </div>
+    <script>
+        function fun(e)
+        {
+            let re=/^[0-9]{8,}$/
+            if(re.test(e.value))
+            {
+                e.style.border="4px solid green"
+            }
+            else{
+                e.style.border="1px solid red"
+            }
+        }
+    </script>
+</body>
+</html>

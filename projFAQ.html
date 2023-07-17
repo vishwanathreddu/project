@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+        .con nav{
+            width: 100%;
+            height: 70px;
+            background-color: darkblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .con nav img{
+            width: 60px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .sub3{
+            position: absolute;
+            top: 46px;
+            width: 140px;
+            height: 142px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sbm1{
+            text-decoration: none;
+        }
+        .sbm1:hover{
+            text-decoration: underline;
+        }
+        .sbm2{
+            text-decoration: none;
+        }
+        .sbm2:hover{
+            text-decoration: underline;
+        }
+        .sbm3{
+            text-decoration: none;
+        }
+        .sbm3:hover{
+            text-decoration: underline;
+        }
+        .sbm4{
+            text-decoration: none;
+        }
+        .sbm4:hover{
+            text-decoration: underline;
+        }
+        .sbm5{
+            text-decoration: none;
+        }
+        .sbm5:hover{
+            text-decoration: underline;
+        }
+        .sbm6{
+            text-decoration: none;
+        }
+        .sbm6:hover{
+            text-decoration: underline;
+        }
+        .sbm7{
+            text-decoration: none;
+        }
+        .sbm7:hover{
+            text-decoration: underline;
+        }
+        .sbm8{
+            text-decoration: none;
+        }
+        .sbm8:hover{
+            text-decoration: underline;
+        }
+        .sbm9{
+            text-decoration: none;
+        }
+        .sbm9:hover{
+            text-decoration: underline;
+        }
+        .sbm10{
+            text-decoration: none;
+        }
+        .sbm10:hover{
+            text-decoration: underline;
+        }
+        .sm3:hover .sub3{
+            background-color: gainsboro;
+            display: block;
+            z-index: 2;
+        }
+        .sub4{
+            position: absolute;
+            top: 46px;
+            width: 140px;
+            height: 68px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sm4:hover .sub4{
+            background-color: gainsboro;
+            display: block;
+            z-index: 3;
+        }
+        .sub6{
+            position: absolute;
+            top: 46px;
+            width: 110px;
+            height: 61px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+            
+        }
+        .sm6:hover .sub6{
+            background-color: gainsboro;
+            display: block;
+            z-index: 5;
+        }
+        .sub7{
+            position: absolute;
+            top: 46px;
+            width: 90px;
+            height: 62px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sbm1{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm2{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm3{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm4{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm5{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm6{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm7{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sm7:hover .sub7{
+            background-color: gainsboro;
+            display: block;
+            z-index: 5;
+        }
+        .sbm8{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm9{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm10{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .a2{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a2:hover{
+            text-decoration: underline;
+        }
+        .a3{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a3:hover{
+            text-decoration: underline;
+        }
+        .a4{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a4:hover{
+            text-decoration: underline;
+        }
+
+        .a5{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a5:hover{
+            text-decoration: underline;
+        }
+        .a6{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a6:hover{
+            text-decoration: underline;
+        }
+        .a7{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a7:hover{
+            text-decoration: underline;
+        }
+        .box{
+            width: 90%;
+            height: 100%;
+            border: 2px solid #757575;
+            border-radius: 2px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .line{
+            width: 100%;
+            height: 2px;
+            background-color: gainsboro;
+            position: relative;
+        }
+        dd{
+            font-size: 18px;
+            padding-right: 5px;
+            padding-bottom: 10px;
+        }
+        dt{
+            padding-left: 5px;
+        }
+        h4{
+            font-size: 23px;
+        }
+        .foot{
+            background-color: darkblue;
+            height: 20vh;
+            width: 100%;
+            position: relative;
+            top: 5vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .foot a{
+            font-size: 15px;
+            margin-top: 20px;
+            color: lightyellow;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+        .foot a:hover{
+            text-decoration: underline;
+        }
+        .foot .icon{
+            margin-top: 22px;
+            margin-right: 30px;
+        }
+        .fa-brands{
+            font-size: 20px;
+        }
+        .f1{
+            position: absolute;
+            padding-top: 20px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+  <div class="cont">
+    <div class="con">
+      <nav>
+        <a href="project3.html" class="a1"><img src="Vili1.jpg" class="img2"/></a>
+        <a href="project3.html" class="a2">HOME</a>
+        <div class="sm3"><a href="#3"class="a3">SERVICES</a>
+            <div class="sub3">
+                    <a href="projcyberawer.html" class="sbm1">CYBER TIPS</a>
+                    <a href="projaware.html" class="sbm2">CYBER AWARENESS</a>
+                    <a href="projGallery.html" class="sbm3">GALLERY</a>
+                    <a href="#a4" class="sbm4">RESOURCES</a>
+            </div>
+        </div>
+        <div class="sm4"><a href="#a5" class="a5">REPORT</a>
+            <div class="sub4">
+                <a href="projReport.html" class="sbm5">FINACIAL FRAUD</a>
+                <a href="projReport.html" class="sbm6">CYBER FRAUD</a>
+            </div>
+        </div>
+        <a href="#a8" class="a5">ygsdcugk</a>
+        <div class="sm6"><a href="#a9" class="a6">ABOUT</a>
+            <div class="sub6">
+                <a href="projAbout.html" class="sbm7">KNOW MORE</a>
+                <a href="projContact.html" class="sbm8">BRANCHES</a>
+            </div>
+        </div>
+        <div class="sm7"><a href="#a12" class="a7">LOGIN/SIGNUP</a>
+            <div class="sub7">
+                <a href="projLogin.html" class="sbm9">LOGIN</a>
+                <a href="projReg.html" class="sbm10">SIGN UP</a>
+            </div>
+      </nav>
+    </div>
+    <div class="box">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h3>What is the purpose of National Cyber Crime Reporting Portal?</h3>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    This portal is an initiative of Government of India to facilitate victims/
+                    complainants to report cyber crime complaints online. This portal caters 
+                    all types of cyber crime complaints including complaints pertaining to 
+                    online Child Pornography (CP), Child Sexual Abuse Material (CSAM) or sexual
+                    ly explicit content such as Rape/Gang Rape (CP/RGR) content and other cyber
+                    crimes such as mobile crimes, online and social media crimes, online 
+                    financial frauds, ransomware, hacking, cryptocurrency crimes and online 
+                    cyber trafficking.
+                    The portal also provides an option of reporting an anonymous complaint for 
+                    reporting online Child Pornography (CP) or sexually explicit content such 
+                    as Rape/Gang Rape (RGR) content.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h3>What is CSAM?</h3>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Child Sexually Abusive Material (CSAM) refers to material containing sexual image 
+                    in any form, of a child who is abused or sexually exploited. Section 67 (B) of IT 
+                    Act states that “it is punishable for publishing or transmitting of material 
+                    depicting children in sexually explicit act, etc. in electronic form”.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h3>Apart from this portal, are there any alternative ways to remove objectionable 
+                        content from social media websites?</h3>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Yes, most of the social media website like Facebook, YouTube, Twitter and Instagram etc. have the option of reporting or flagging the objectionable contents. The social media platforms may take appropriate action based on the contents reported to them as per their content policy.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <h3>Which type of cybercrimes I can report on the portal?</h3>
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    There are two options for reporting cybercrimes on the portal:
+                        Report Crime related to Women/ Child – Under this section, you can report complaints pertaining to online Child Pornography (CP), Child Sexual Abuse Material (CSAM) or sexually explicit content such as Rape/Gang Rape (CP/RGR) content.
+                        Report Other Cybercrimes – Under this option, you can report complaints pertaining to cybercrimes such as mobile crimes, online and social media crimes, online financial frauds, ransomware, hacking, cryptocurrency crimes and online cyber trafficking.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h3>What kind of information, should I provide to report complaint?</h3>
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    There are two options for filing a report on www.cybercrime.gov.in: (i) Report Crime related to Women/ Child and (ii) Report Other Cybercrimes. In case of “Report Crime related to Women/ Child”, there are two ways of registering your complaint:
+                    Report Anonymously - You can report crimes related to online Child Pornography/ Rape or Gang Rape (CP/RGR) content anonymously. You do not need to provide any personal information. However, information related to the complaint should be accurate and complete for the police authorities to take necessary action.
+                    Report and Track – Under this option, fields marked with a red asterisk (*) are mandatory. It is important that the police authorities receive accurate and complete information related to the complaint. Therefore, you should provide required information such as your name, phone number, email address, details of the complaint and necessary information supporting the complaint.
+                    Initially, register yourself using your name and valid Indian mobile number. You will receive a One Time Password (OTP) on your mobile number. The OTP remains valid for 30 minutes only. Once successfully register your mobile number on the portal, you will be able to report the complaint.
+                    You can use “Report Other Cybercrimes” option available on the portal to report other cybercrimes such as mobile crimes, online and social media crimes, online financial frauds, ransomware, hacking, cryptocurrency crimes and online cyber trafficking. You are required to register yourself using your name and valid Indian mobile number. You will receive a One Time Password (OTP) on your mobile number. The OTP remains valid for 30 minutes only. Once successfully register your mobile number on the portal, you will be able to report the complaint by selecting appropriate category and sub- category.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <h3>Which State/ UT shall I select while reporting a complaint?</h3>
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    In case of filing a complaint under “Report Crime related to Women/ Child” section by using “Report Anonymously” option, the victims’ location/ State/ UT where the incident has happened should be selected. If it is a report pertaining to website hosting Child Pornography/ Rape or Gang Rape (CP/RGR) content, complainant may select his/her current State/ UT of resident.
+                    As a responsible citizen kindly use “Report and Track” option for reporting the crime, since it would help the Law enforcement agencies to contact you for providing further details.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <h3>How can I file the complaints about other cybercrimes?</h3>
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    In case of other cybercrimes, you can opt for “Report Other Cybercrimes” section. You are required to register yourself using your name and valid Indian mobile number. You will receive a One Time Password (OTP) on your mobile number. The OTP remains valid for 30 minutes only. Once you successfully register your mobile number on the portal, you will be able to report the complaint by selecting appropriate category and sub- category.
+                    Under this section, fields marked with a red asterisk (*) are mandatory. It is important that the police authorities receive accurate and complete information related to the complaint. Therefore, you should provide required information such as your name, phone number, email address, details of the complaint and necessary information supporting the complaint.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <h3>What type of information would be considered as evidence while filing my complaint related to cybercrime?</h3>
+                  </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    It is important to keep any evidence you may have related to your complaint. Evidence may include:
+                    Credit card receipt
+                    Bank statement
+                    Envelope (if received a letter or item through mail or courier)
+                    Brochure/Pamphlet
+                    Online money transfer receipt
+                    Copy of email
+                    URL of webpage
+                    Chat transcripts
+                    Suspect mobile number screenshot
+                    Videos
+                    Images
+                    Any other kind of document
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    <h3>What action will be taken if complainant reports any false complaint/information?</h3>
+                  </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Providing false information could make complainant liable to penal action as per the Indian Penal Code.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    <h3>Can I report a complaint without uploading any information?</h3>
+                  </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    It is recommended that you provide as much information about the complaint as possible so that the police authorities working on the complaint are able to take appropriate and prompt action.
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+    <footer>
+      <div class="foot">
+          <a class="sbm10" href="projContact.html">Agencies</a>
+          <a class="sbm11" href="#7">Operations</a>
+          <a class="sbm12" href="projReg.html">New to work</a>
+          <a class="sbm13" href="projFAQ.html">FAQ</a>
+          <a class="sbm14" href="projDisclaimer.html">Disclaimer</a>
+          <div class="icon">
+              <a href="#a13"><i class="fa-brands fa-twitter" style="padding: 7px; font-size: 23px;"></i></a>
+              <a href="#a14"><i class="fa-brands fa-facebook" style="padding: 7px; font-size: 23px;"></i></a>
+              <a href="#a15"><i class="fa-brands fa-instagram" style="padding: 5px; font-size: 23px;"></i></a>
+              <a href="#a16"><i class="fa-brands fa-github" style="padding: 5px; font-size: 23px;"></i></a>
+          </div>
+          <div class="f1">This website is Best viewed in Mozilla Firefox, Google Chrome.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1F989345</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

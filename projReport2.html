@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            outline: 0px;
+        }
+        .con nav{
+            width: 100%;
+            height: 70px;
+            background-color: darkblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .con nav img{
+            width: 60px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .sub3{
+            position: absolute;
+            top: 46px;
+            width: 145px;
+            height: 138px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sbm1{
+            text-decoration: none;
+        }
+        .sbm1:hover{
+            text-decoration: underline;
+        }
+        .sbm2{
+            text-decoration: none;
+        }
+        .sbm2:hover{
+            text-decoration: underline;
+        }
+        .sbm3{
+            text-decoration: none;
+        }
+        .sbm3:hover{
+            text-decoration: underline;
+        }
+        .sbm4{
+            text-decoration: none;
+        }
+        .sbm4:hover{
+            text-decoration: underline;
+        }
+        .sbm5{
+            text-decoration: none;
+        }
+        .sbm5:hover{
+            text-decoration: underline;
+        }
+        .sbm6{
+            text-decoration: none;
+        }
+        .sbm6:hover{
+            text-decoration: underline;
+        }
+        .sbm7{
+            text-decoration: none;
+        }
+        .sbm7:hover{
+            text-decoration: underline;
+        }
+        .sbm8{
+            text-decoration: none;
+        }
+        .sbm8:hover{
+            text-decoration: underline;
+        }
+        .sbm9{
+            text-decoration: none;
+        }
+        .sbm9:hover{
+            text-decoration: underline;
+        }
+        .sbm10{
+            text-decoration: none;
+        }
+        .sbm10:hover{
+            text-decoration: underline;
+        }
+        .sm3:hover .sub3{
+            background-color: gainsboro;
+            display: block;
+            z-index: 2;
+        }
+        .sub4{
+            position: absolute;
+            top: 46px;
+            width: 140px;
+            height: 50px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sm4:hover .sub4{
+            background-color: gainsboro;
+            display: block;
+            z-index: 3;
+        }
+        .sub6{
+            position: absolute;
+            top: 46px;
+            width: 110px;
+            height: 53px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+            
+        }
+        .sm6:hover .sub6{
+            background-color: gainsboro;
+            display: block;
+            z-index: 5;
+        }
+        .sub7{
+            position: absolute;
+            top: 46px;
+            width: 84px;
+            height: 53px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sbm1{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm2{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm3{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm4{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm5{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm6{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm7{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sm7:hover .sub7{
+            background-color: gainsboro;
+            display: block;
+            z-index: 5;
+        }
+        .sbm8{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm9{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm10{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .a2{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a2:hover{
+            text-decoration: underline;
+        }
+        .a3{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a3:hover{
+            text-decoration: underline;
+        }
+        .a4{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a4:hover{
+            text-decoration: underline;
+        }
+
+        .a5{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a5:hover{
+            text-decoration: underline;
+        }
+        .a6{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a6:hover{
+            text-decoration: underline;
+        }
+        .a7{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a7:hover{
+            text-decoration: underline;
+        }
+        .box2{
+            height: 97vh;
+            width: 90%;
+            border: 2px solid gainsboro;
+            margin: 30px;
+            padding: 5px;
+        }
+        h3{
+            width: auto;
+            height: 10vh;
+            box-sizing: border-box;
+            padding: 10px;
+            background-color: antiquewhite;
+            text-align: center;
+            font-size: 22px;
+        }
+        .l1{
+            padding: 40px;
+            position: relative;
+            top: 33px;
+        }
+        .s1{
+            position: relative;
+            left: 50px;
+        }
+        .l2{
+            padding: 40px;
+            position: relative;
+            top: 60px;
+        }
+        .s2{
+            position: relative;
+            left: 23px;
+            width: 320px;
+        }
+        .l3{
+            padding: 40px;
+            position: relative;
+            top: 80px;
+        }
+        .d1{
+            position: relative;
+            top: -15px;
+            left: 75px;
+        }
+        .s3{
+            position: relative;
+            top: -15px;
+            left: 110px;
+        }
+        .s4{
+            position: relative;
+            top: -15px;
+            left: 130px;
+        }
+        .s5{
+            position: relative;
+            top: -15px;
+            left:150px;
+        }
+        .line{
+            width: 100%;
+            height: 2px;
+            background-color: gray;
+            position: relative;
+            top: 100px;
+        }
+        .l4{
+            padding: 40px;
+            position: relative;
+            top: 130px;
+        }
+        .ff1{
+            margin-left: 60px;
+        }
+        .l5{
+            position: relative;
+            top: 155px;
+        }
+        .tt1{
+            position: relative;
+            top: -190px;
+            right: -270px;
+        }
+        .pp1{
+            position: relative;
+            top: -10px;
+            padding: 40px;
+        }
+        .pp2{
+            position: relative;
+            top: -91px;
+            padding: 25px;
+            right:27px;
+        }
+        .b1{
+            position: relative;
+            top: -5px;
+            width: 90px;
+            height: 35px;
+            left: 350px;
+        }
+        .foot{
+            background-color: darkblue;
+            height: 20vh;
+            width: 100%;
+            position: relative;
+            top: 5vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .foot a{
+            font-size: 15px;
+            margin-top: 20px;
+            color: lightyellow;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+        .foot a:hover{
+            text-decoration: underline;
+        }
+        .foot .icon{
+            margin-top: 22px;
+            margin-right: 30px;
+        }
+        .fa-brands{
+            font-size: 20px;
+        }
+        .f1{
+            position: absolute;
+            padding-top: 20px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="con">
+            <nav>
+                <a href="project3.html" class="a1"><img src="Vili1.jpg" class="img2"/></a>
+                <a href="project3.html" class="a2">HOME</a>
+                <div class="sm3"><a href="#3"class="a3">SERVICES</a>
+                    <div class="sub3">
+                            <a href="projcyberawer.html" class="sbm1">CYBER TIPS</a>
+                            <a href="projaware.html" class="sbm2">CYBER AWARENESS</a>
+                            <a href="projGallery.html" class="sbm3">GALLERY</a>
+                            <a href="#a4" class="sbm4">RESOURCES</a>
+                    </div>
+                </div>
+                <div class="sm4"><a href="#a5" class="a5">REPORT</a>
+                    <div class="sub4">
+                        <a href="projReport.html" class="sbm5">FINACIAL FRAUD</a>
+                        <a href="projReport.html" class="sbm6">CYBER FRAUD</a>
+                    </div>
+                </div>
+                <a href="#a8" class="a5">ygsdcugk</a>
+                <div class="sm6"><a href="#a9" class="a6">ABOUT</a>
+                    <div class="sub6">
+                        <a href="projAbout.html" class="sbm7">KNOW MORE</a>
+                        <a href="#a11" class="sbm8">BRANCHES</a>
+                    </div>
+                </div>
+                <div class="sm7"><a href="#a12" class="a7">LOGIN/SIGNUP</a>
+                    <div class="sub7">
+                        <a href="projLogin.html" class="sbm9">LOGIN</a>
+                        <a href="projReg.html" class="sbm10">SIGN UP</a>
+                    </div>
+            </nav>
+            <div class="box2">
+                <h3>Complaint/Incident Details</h3>
+                <label class="l1">Category of complaint
+                    <select class="s1" id="si1">
+                        <option value="1">--select--</option>
+                        <option value="2">Online and social media related crime</option>
+                        <option value="3">Online Financial Fraud</option>
+                        <option value="4">Hacking/damage to computer,computer system etc</option>
+                        <option value="5">Online Cyber Trafficking</option>
+                        <option value="6">Online Gaming</option>
+                        <option value="7">Ransomware</option>
+                        <option value="8">Cryptocurrency Crime</option>
+                        <option value="9">Cyber Terraorism</option>
+                        <option value="10">Any other Cyber crime</option>
+                    </select>
+                </label><br>
+                <label class="l2">Sub-category of complaint
+                    <select class="s2" id="si2">
+                        <option value="11">--select--</option>
+                        <option value="12">Business Email Compromise?Email takeover</option>
+                        <option value="13">Debit/Credit Card frad/sim swap Fraud</option>
+                        <option value="14">Demand/Depository Fraud</option>
+                        <option value="15">E-wallet related Fraud</option>
+                        <option value="16">Fraud Call/vishing</option>
+                        <option value="17">Internet Banking related Fraud</option>
+                        <option value="18">UPI Fraud</option>
+                    </select>
+                </label><br>
+                <label class="l3">Approximate date & time <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of incident/receiving/ <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; viewing of content
+                <input class="d1" type="date"/>
+                    <select class="s3" id="si3">
+                        <option value="19">HH</option>
+                        <option value="20">01</option>
+                        <option value="21">02</option>
+                        <option value="22">03</option>
+                        <option value="23">04</option>
+                        <option value="24">05</option>
+                        <option value="25">06</option>
+                        <option value="26">07</option>
+                        <option value="27">08</option>
+                        <option value="28">09</option>
+                        <option value="29">10</option>
+                        <option value="30">11</option>
+                        <option value="31">12</option>
+                    </select>
+                    <select class="s4" id="si4">
+                        <option value="32">MM</option>
+                        <option value="33">01</option>
+                        <option value="34">02</option>
+                        <option value="35">03</option>
+                        <option value="36">04</option>
+                        <option value="37">05</option>
+                        <option value="38">06</option>
+                        <option value="39">07</option>
+                        <option value="40">08</option>
+                        <option value="41">09</option>
+                        <option value="42">10</option>
+                        <option value="43">11</option>
+                        <option value="44">12</option>
+                        <option value="45">13</option>
+                        <option value="46">14</option>
+                        <option value="47">15</option>
+                        <option value="48">16</option>
+                        <option value="49">17</option>
+                        <option value="50">18</option>
+                        <option value="51">19</option>
+                        <option value="52">20</option>
+                        <option value="53">21</option>
+                        <option value="54">22</option>
+                        <option value="55">23</option>
+                        <option value="56">24</option>
+                        <option value="57">25</option>
+                        <option value="58">26</option>
+                        <option value="59">27</option>
+                        <option value="60">28</option>
+                        <option value="61">29</option>
+                        <option value="62">30</option>
+                        <option value="63">31</option>
+                        <option value="64">32</option>
+                        <option value="65">33</option>
+                        <option value="66">34</option>
+                        <option value="67">35</option>
+                        <option value="68">36</option>
+                        <option value="69">37</option>
+                        <option value="70">38</option>
+                        <option value="71">39</option>
+                        <option value="72">40</option>
+                        <option value="73">41</option>
+                        <option value="74">42</option>
+                        <option value="75">43</option>
+                        <option value="76">44</option>
+                        <option value="77">45</option>
+                        <option value="78">46</option>
+                        <option value="79">47</option>
+                        <option value="80">48</option>
+                        <option value="81">49</option>
+                        <option value="82">50</option>
+                        <option value="83">51</option>
+                        <option value="84">52</option>
+                        <option value="85">53</option>
+                        <option value="86">54</option>
+                        <option value="87">55</option>
+                        <option value="88">56</option>
+                        <option value="89">57</option>
+                        <option value="90">58</option>
+                        <option value="91">59</option>
+                        <option value="92">60</option>
+                    </select>
+                    <select class="s5" id="si5">
+                        <option value="">AM</option>
+                        <option value="">PM</option>
+                    </select>
+                </label>
+                <div class="line"></div>
+                <label class="l4">Supporting Evidence <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(upload Media/image/PDF)
+                    <input class="ff1" type="file"/>
+                </label><br>
+                <label class="l5">
+                    <p class="pp1">please provide any addittional</p> <br>
+                    <p class="pp2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;information about the incident</p>
+                    <textarea  class="tt1" id="ta1" cols="30" rows="5"></textarea>
+                </label>
+                <br>
+                <button class="b1">Save as draft & submit</button>
+            </div>
+        <footer>
+            <div class="foot">
+                <a class="sbm10" href="projContact.html">Agencies</a>
+                <a class="sbm11" href="#7">Operations</a>
+                <a class="sbm12" href="projReg.html">New to work</a>
+                <a class="sbm13" href="projFAQ.html">FAQ</a>
+                <a class="sbm14" href="projDisclaimer.html">Disclaimer</a>
+                <div class="icon">
+                    <a href="#a13"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#a14"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#a15"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#a16"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div class="f1">This website is Best viewed in Mozilla Firefox, Google Chrome.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1F989345</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

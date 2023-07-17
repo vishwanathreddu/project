@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="Vili1.jpg" rel="icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+        .con{
+            width: 100%;
+            height: 100vh;
+        }
+        .con nav{
+            width: 100%;
+            height: 70px;
+            background-color: darkblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .con nav img{
+            width: 60px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .sub3{
+            position: absolute;
+            top: 46px;
+            width: 145px;
+            height: 138px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sbm1{
+            text-decoration: none;
+        }
+        .sbm1:hover{
+            text-decoration: underline;
+        }
+        .sbm2{
+            text-decoration: none;
+        }
+        .sbm2:hover{
+            text-decoration: underline;
+        }
+        .sbm3{
+            text-decoration: none;
+        }
+        .sbm3:hover{
+            text-decoration: underline;
+        }
+        .sbm4{
+            text-decoration: none;
+        }
+        .sbm4:hover{
+            text-decoration: underline;
+        }
+        .sbm5{
+            text-decoration: none;
+        }
+        .sbm5:hover{
+            text-decoration: underline;
+        }
+        .sbm6{
+            text-decoration: none;
+        }
+        .sbm6:hover{
+            text-decoration: underline;
+        }
+        .sbm7{
+            text-decoration: none;
+        }
+        .sbm7:hover{
+            text-decoration: underline;
+        }
+        .sbm8{
+            text-decoration: none;
+        }
+        .sbm8:hover{
+            text-decoration: underline;
+        }
+        .sbm9{
+            text-decoration: none;
+        }
+        .sbm9:hover{
+            text-decoration: underline;
+        }
+        .sbm10{
+            text-decoration: none;
+        }
+        .sbm10:hover{
+            text-decoration: underline;
+        }
+        .sm3:hover .sub3{
+            background-color: gainsboro;
+            display: block;
+            z-index: 2;
+        }
+        .sub4{
+            position: absolute;
+            top: 46px;
+            width: 140px;
+            height: 50px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sm4:hover .sub4{
+            background-color: gainsboro;
+            display: block;
+            z-index: 3;
+        }
+        .sub6{
+            position: absolute;
+            top: 46px;
+            width: 110px;
+            height: 53px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+            
+        }
+        .sm6:hover .sub6{
+            background-color: gainsboro;
+            display: block;
+            z-index: 5;
+        }
+        .sub7{
+            position: absolute;
+            top: 46px;
+            width: 84px;
+            height: 53px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sbm1{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm2{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm3{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm4{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm5{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm6{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm7{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sm7:hover .sub7{
+            background-color: gainsboro;
+            display: block;
+            z-index: 5;
+        }
+        .sbm8{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm9{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm10{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .a2{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a2:hover{
+            text-decoration: underline;
+        }
+        .a3{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a3:hover{
+            text-decoration: underline;
+        }
+        .a4{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a4:hover{
+            text-decoration: underline;
+        }
+
+        .a5{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a5:hover{
+            text-decoration: underline;
+        }
+        .a6{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a6:hover{
+            text-decoration: underline;
+        }
+        .a7{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a7:hover{
+            text-decoration: underline;
+        }
+        .cont img{
+            width: 100%;
+            height:65vh;
+        }
+        .content{
+            position: relative;
+        }
+        .content img{
+            width: 100%;
+            height: 58vh;
+        }
+        .lt{
+            position: absolute;
+            top: 35%;
+            left: 18px;
+            color: yellow;
+            font-size: 25px;
+        }
+        .gt{
+            position: absolute;
+            top: 35%;
+            left: 97%;
+            color: yellow;
+            font-size: 25px;
+        }
+        .circon{
+            position: absolute;
+            left: 46%;
+            top: 60%;
+            color: antiquewhite;
+        }
+        .circon .fa-solid{
+            color: bisque;
+            font-size: 20px;
+        }
+        .circon .fa-regular{
+            color: blanchedalmond;
+            font-size: 15px;
+        }
+        .banner{
+            width: 100%;
+            height: 360vh;
+            background-color: beige;
+            margin-top: 20px;
+        }
+        .banner h3{
+            font-size: 27px;
+            margin-left: 400px;
+            position: relative;
+            top: 30px;
+            font-weight: 900;
+        }
+        .flex1{
+            width: 80%;
+            height: 100vh;
+            margin: 70px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 0px lightpink;
+        }
+        .img3{
+            margin-left: 1px;
+            margin-top: 1px;
+            margin-left: 1px;
+            height: 350px;
+            width: 782px;
+            border-radius: 5px;
+        }
+        .flex1:hover{
+            box-shadow: 0 0 0 5px #fff,0 0 0 8px palevioletred
+        }
+        .text1{
+            padding: 5px;
+            word-spacing: 5px;
+            line-height: 25px;
+        }
+        .flex2{
+            width: 80%;
+            height: 100vh;
+            margin: 70px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 0px lightpink;
+        }
+        .img4{
+            margin-left: 1px;
+            margin-top: 1px;
+            margin-left: 1px;
+            height: 350px;
+            width: 782px;
+            border-radius: 5px;
+        }
+        .flex2:hover{
+            box-shadow: 0 0 0 5px #fff,0 0 0 8px palevioletred
+        }
+        .text2{
+            padding: 5px;
+            word-spacing: 5px;
+            line-height: 25px;
+        }
+        .flex3{
+            width: 80%;
+            height: 100vh;
+            margin: 70px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-sizing: border-box;
+            box-shadow: 3px 3px 0px lightpink;
+        }
+        .img5{
+            margin-left: 1px;
+            margin-top: 1px;
+            margin-left: 1px;
+            height: 350px;
+            width: 782px;
+            border-radius: 5px;
+        }
+        .flex3:hover{
+            box-shadow: 0 0 0 5px #fff,0 0 0 8px palevioletred;
+        }
+        .text3{
+            padding: 5px;
+            word-spacing: 5px;
+            line-height: 25px;
+        }
+        .fix{
+            position: fixed;
+            padding-left: 94%;
+            padding-bottom: -90%;
+            top: 85%;
+            z-index: 8;
+        }
+        .fa-comment-dots{
+            font-size: 35px;
+        }
+        .foot{
+            background-color: darkblue;
+            height: 20vh;
+            width: 100%;
+            position: relative;
+            top: 5vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .foot a{
+            font-size: 15px;
+            margin-top: 20px;
+            color: lightyellow;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+        .foot a:hover{
+            text-decoration: underline;
+        }
+        .foot .icon{
+            margin-top: 22px;
+            margin-right: 30px;
+        }
+        .fa-brands{
+            font-size: 20px;
+        }
+        .f1{
+            position: absolute;
+            padding-top: 20px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <nav>
+            <a href="project3.html" class="a1"><img src="Vili1.jpg" class="img2"/></a>
+            <a href="project3.html" class="a2">HOME</a>
+            <div class="sm3"><a href="#3"class="a3">SERVICES</a>
+                <div class="sub3">
+                        <a href="projcyberawer.html" class="sbm1">CYBER TIPS</a>
+                        <a href="projaware.html" class="sbm2">CYBER AWARENESS</a>
+                        <a href="projGallery.html" class="sbm3">GALLERY</a>
+                        <a href="#a4" class="sbm4">RESOURCES</a>
+                </div>
+            </div>
+            <div class="sm4"><a href="#a5" class="a5">REPORT</a>
+                <div class="sub4">
+                    <a href="projReport.html" class="sbm5">FINACIAL FRAUD</a>
+                    <a href="projReport.html" class="sbm6">CYBER FRAUD</a>
+                </div>
+            </div>
+            <a href="#a8" class="a5">ygsdcugk</a>
+            <div class="sm6"><a href="#a9" class="a6">ABOUT</a>
+                <div class="sub6">
+                    <a href="projAbout.html" class="sbm7">KNOW MORE</a>
+                    <a href="projContact.html" class="sbm8">BRANCHES</a>
+                </div>
+            </div>
+            <div class="sm7"><a href="#a12" class="a7">LOGIN/SIGNUP</a>
+                <div class="sub7">
+                    <a href="projLogin.html" class="sbm9">LOGIN</a>
+                    <a href="projReg.html" class="sbm10">SIGN UP</a>
+                </div>
+        </nav>
+        <div class="cont">
+
+        </div>
+         <div class="anim">
+            <div class="content"><img src="cybercrimeimg1.jpg" class="img1"/></div>
+            <div class="lt" onclick="decr()"><i class="fa-solid fa-less-than"></i></div>
+            <div class="gt" onclick="incr()"><i class="fa-solid fa-greater-than"></i></div>
+            <div class="circon">
+                <i class="fa-solid fa-circle" onclick="fun1(0)"></i>
+                <i class="fa-regular fa-circle" onclick="fun1(1)"></i>
+                <i class="fa-regular fa-circle" onclick="fun1(2)"></i>
+                <i class="fa-regular fa-circle" onclick="fun1(3)"></i>
+                <i class="fa-regular fa-circle" onclick="fun1(4)"></i>
+            </div>
+        </div>
+        <div class="banner">
+            <h3>Highlights</h3>
+            <div class="flex1">
+                <div class="head1">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-23 162029.png" class="img3"/>
+                </div>
+                <div class="text1">
+                    <h2>National Conference on Cyber Safety & National Security</h2>
+                    <p>The Union Minister for Home and Cooperation, Shri Amit Shah addressed the National Conference on Cyber Safety and National Security (Azadi from Cybercrime – Azadi ka Amrit Mahotsav) in New Delhi on 20th June 2022.</p>  
+                </div>
+            </div>
+            <div class="flex2">
+                <div class="head2">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-23 162101.png" class="img4"/>
+                </div>
+                <div class="text2">
+                    <h2>Launch of I4C Newsletter 'Cyber Pravaha'</h2>
+                    <p>The Union Home Secretary unveiled the first edition of I4C newsletter 'Cyber Pravaha'. It’s an initiative to share precise information related to Cybercrime with Law Enforcement Agencies and other stakeholders.</p>
+                </div>
+            </div>
+            <div class="flex3">
+                <div class="head3">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-23 162123.png" class="img5"/>
+                </div>
+                <div class="text3">
+                    <h2>Workshop with State/UT LEAs</h2>
+                    <p>A Meeting cum Interaction and Workshop of Joint Cybercrime Coordination Teams was organised at Raipur, in coordination with Chhattisgarh Police by I4C. JCCTs shared their experiences, challenges, etc. for prevention of Cybercrime.</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="fix">
+            &nbsp;&nbsp;<i class="fa-regular fa-comment-dots"></i>
+            <p>&nbsp;&nbsp;&nbsp;chat with us</p>
+        </div> -->
+        <div class="foot">
+            <a class="sbm10" href="projContact.html">AGENCIES</a>
+            <a class="sbm11" href="#7">OPERATIONS</a>
+            <a class="sbm12" href="projReg.html">NEWBIE</a>
+            <a class="sbm13" href="projFAQ.html">FAQ</a>
+            <a class="sbm14" href="projDisclaimer.html">DISCLAIMER</a>
+            <div class="icon">
+                <a href="#a13"><i class="fa-brands fa-twitter" style="padding: 7px; font-size: 23px;"></i></a>
+                <a href="#a14"><i class="fa-brands fa-facebook" style="padding: 7px; font-size: 23px;"></i></a>
+                <a href="#a15"><i class="fa-brands fa-instagram" style="padding: 5px; font-size: 23px;"></i></a>
+                <a href="#a16"><i class="fa-brands fa-github" style="padding: 5px; font-size: 23px;"></i></a>
+            </div>
+            <div class="f1">This website is Best viewed in Mozilla Firefox, Google Chrome.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1F989345</div>
+        </div>
+    </div>
+    <script>
+        let arr=["cybercrimeimg1.jpg","cyberimg6.jpg","cyberimg7.jpg","cyberimg2.png","cyberimg3.jpg"]
+        let i=0
+        let cr=document.getElementsByClassName('fa-circle')
+        function incr()
+        {
+            cr[i].className='fa-regular fa-circle'
+            i++
+            if(i>=5)
+            {
+                i=0
+            }
+            document.getElementsByTagName("img")[1].src=arr[i]
+            cr[i].className='fa-solid fa-circle'
+        }
+        function decr()
+        {
+            cr[i].className='fa-regular fa-circle'
+            i--
+            if(i<0)
+            {
+                i=4
+            }
+            document.getElementsByTagName("img")[1].src=arr[i]
+            cr[i].className='fa-solid fa-circle'
+        }
+        function fun1(e)
+        {
+            cr[i].className='fa-regular fa-circle'
+            document.getElementsByTagName("img")[1].src=arr[e]
+            i=e
+            cr[i].className='fa-solid fa-circle'
+        }
+        setInterval(incr,1000)
+    </script>
+</body>
+</html>

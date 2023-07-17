@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            outline: 0px;
+        }
+        .bg{
+            min-height: 100vh;
+            width: 100%;
+            background: url("cyberloginimg.jpg")no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .login{
+            background-color: azure;
+            position: absolute;
+            top: 50%;
+            left: 72%;
+            height: 65%;
+            width: 400px;
+            padding: 40px;
+            margin: 20px auto;
+            border: 2px solid #2fd1ee;
+            border-radius: 5px;
+            background: transparent;
+            transform: translate(-50%, -55%);
+            box-sizing: border-box;
+            box-shadow: 10px 5px 25px 25px rgba(18, 233, 233, 0.568);
+            border-radius: 10px;
+        }
+         .login p{
+            text-align: center;
+            font-size: 25px;
+            color:fuchsia;
+        }
+        .t1{
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 22px;
+            height: 28px;
+            width: 250px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+        .t2{
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 22px;
+            height: 28px;
+            width: 250px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
+        .b1{
+            width: 90px;
+            height: 35px;
+            margin-top: 40px;
+            margin-left: 40px;
+            border: 0px solid;
+            border-radius: 5px;
+            background-color: chartreuse;
+            color: white;
+        }
+        .b1:hover{
+            box-sizing: border-box;
+            box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+        }
+        .b2{
+            width: 90px;
+            height: 35px;
+            margin-top: 40px;
+            margin-left: 20px;
+            border: 0px solid;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+        }
+        .b2:hover{
+            box-sizing: border-box;
+            box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+        }
+        a{
+            position: relative;
+            top: 40px;
+            left: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        .a1:hover{
+            color: #ffffff;
+            text-decoration: underline ;
+           
+        }
+        .a2:hover{
+            color: #ffffff;
+            text-decoration: underline ;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="bg">
+            <div class="login">
+                <p>LOGIN</p>
+                <input type="text" class="t1" id="a" placeholder="enter userid" /><br/>
+                <input type="password" class="t2" id="b" placeholder="enter password" /><br/>
+                <button onclick="login()" class="b1">Login</button>
+                <button onclick="clr()" class="b2">Clear</button><br/>
+                <a href="projReg.html" class="a1">New User</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#8" class="a2">forget password</a>
+            </div>
+        </div>
+    </form>
+<script>
+    console.log(document.getElementById("a").value)
+    console.log(document.getElementById("b").value)
+    console.log(localStorage.getItem("uid"))
+    console.log(localStorage.getItem("pwd"))
+        function login()
+        {
+            let uid=document.getElementById("a").value
+            let pwd=document.getElementById("b").value
+            let lsuid=localStorage.getItem("uid")
+            let lspwd=localStorage.getItem("pwd")
+            console.log(uid,pwd,lspwd,lsuid)
+            if(uid==lsuid && pwd==lspwd)
+            {
+                console.log("Success")
+                window.location="./project3.html"
+            }
+            else{
+                console.log("Failed")
+                window.location="./projReg.html"
+            }
+        }
+        function clr()
+        {
+            document.getElementById("aa1").value=''
+        }
+    </script>
+</body>
+</html>

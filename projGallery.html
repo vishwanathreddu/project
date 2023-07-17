@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            outline: 0px;
+        }
+        .cont1{
+            margin: 20px;
+        }
+        .cont nav{
+            width: 100%;
+            height: 70px;
+            background-color: darkblue;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .cont nav img{
+            width: 60px;
+            height: 45px;
+            border-radius: 50%;
+        }
+        .sub3{
+            position: absolute;
+            top: 46px;
+            width: 145px;
+            height: 138px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sbm1{
+            text-decoration: none;
+        }
+        .sbm1:hover{
+            text-decoration: underline;
+        }
+        .sbm2{
+            text-decoration: none;
+        }
+        .sbm2:hover{
+            text-decoration: underline;
+        }
+        .sbm3{
+            text-decoration: none;
+        }
+        .sbm3:hover{
+            text-decoration: underline;
+        }
+        .sbm4{
+            text-decoration: none;
+        }
+        .sbm4:hover{
+            text-decoration: underline;
+        }
+        .sbm5{
+            text-decoration: none;
+        }
+        .sbm5:hover{
+            text-decoration: underline;
+        }
+        .sbm6{
+            text-decoration: none;
+        }
+        .sbm6:hover{
+            text-decoration: underline;
+        }
+        .sbm7{
+            text-decoration: none;
+        }
+        .sbm7:hover{
+            text-decoration: underline;
+        }
+        .sbm8{
+            text-decoration: none;
+        }
+        .sbm8:hover{
+            text-decoration: underline;
+        }
+        .sbm9{
+            text-decoration: none;
+        }
+        .sbm9:hover{
+            text-decoration: underline;
+        }
+        .sbm10{
+            text-decoration: none;
+        }
+        .sbm10:hover{
+            text-decoration: underline;
+        }
+        .sm3:hover .sub3{
+            background-color: gainsboro;
+            display: block;
+            z-index: 2;
+        }
+        .sub4{
+            position: absolute;
+            top: 46px;
+            width: 140px;
+            height: 50px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sm4:hover .sub4{
+            background-color: gainsboro;
+            display: block;
+            z-index: 3;
+        }
+        .sub6{
+            position: absolute;
+            top: 46px;
+            width: 110px;
+            height: 53px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+            
+        }
+        .sm6:hover .sub6{
+            background-color: gainsboro;
+            display: block;
+            z-index: 5;
+        }
+        .sub7{
+            position: absolute;
+            top: 46px;
+            width: 84px;
+            height: 53px;
+            display: none;
+            font-size: 16px;
+            padding: 5px;
+            line-height: 28px;
+        }
+        .sbm1{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm2{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm3{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm4{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm5{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm6{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm7{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sm7:hover .sub7{
+            background-color: gainsboro;
+            display: block;
+            z-index: 5;
+        }
+        .sbm8{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm9{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .sbm10{
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+        .a2{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a2:hover{
+            text-decoration: underline;
+        }
+        .a3{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a3:hover{
+            text-decoration: underline;
+        }
+        .a4{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a4:hover{
+            text-decoration: underline;
+        }
+
+        .a5{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a5:hover{
+            text-decoration: underline;
+        }
+        .a6{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a6:hover{
+            text-decoration: underline;
+        }
+        .a7{
+            font-size: 16px;
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+        .a7:hover{
+            text-decoration: underline;
+        }
+        h2{
+            text-align: center;
+        }
+        .cont2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 395vh;
+            width: 82%;
+            margin: auto;
+            gap: 5px;
+            margin-top: 30px;
+            background-color: gainsboro;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 5px grey;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 900;
+        }
+        .g1{
+            width: 45%;
+            height: 50%;
+        }
+        .g2{
+            width: 45%;
+            height: 50%;
+        }
+        .g3{
+            width: 45%;
+            height: 50%;
+        }
+        .g4{
+            width: 45%;
+            height: 50%;
+        }
+        .g5{
+            width: 45%;
+            height: 50%;
+        }
+        .g6{
+            width: 45%;
+            height: 50%;
+        }
+        .g7{
+            width: 45%;
+            height: 50%;
+        }
+        .g8{
+            width: 45%;
+            height: 50%;
+        }
+        .g9{
+            width: 45%;
+            height: 50%;
+        }
+        p{
+            margin-top: -5px;
+            height: 8vh;
+            width: 326px;
+            padding: 7px;
+            background-color: darkblue;
+            margin-bottom: 40px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            width: 340px;
+            height: 300px;
+        }
+        .foot{
+            background-color: darkblue;
+            height: 18vh;
+            width: 100%;
+            position: relative;
+            top: 5vh;
+            display: flex;
+            justify-content: space-around;
+        }
+        .foot a{
+            font-size: 17px;
+            margin-top: 20px;
+            color: lightyellow;
+            margin-top: 30px;
+        }
+        .foot .icon{
+            margin-top: 22px;
+            margin-right: 30px;
+        }
+        .fa-brands{
+            font-size: 20px;
+        }
+        .f1{
+            position: absolute;
+            padding-top: 20px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <nav>
+            <a href="project3.html" class="a1"><img src="Vili1.jpg" class="img2"/></a>
+            <a href="project3.html" class="a2">HOME</a>
+            <div class="sm3"><a href="#3"class="a3">SERVICES</a>
+                <div class="sub3">
+                        <a href="projcyberawer.html" class="sbm1">CYBER TIPS</a>
+                        <a href="projaware.html" class="sbm2">CYBER AWARENESS</a>
+                        <a href="projGallery.html" class="sbm3">GALLERY</a>
+                        <a href="#a4" class="sbm4">RESOURCES</a>
+                </div>
+            </div>
+            <div class="sm4"><a href="#a5" class="a5">REPORT</a>
+                <div class="sub4">
+                    <a href="projReport.html" class="sbm5">FINACIAL FRAUD</a>
+                    <a href="projReport.html" class="sbm6">CYBER FRAUD</a>
+                </div>
+            </div>
+            <a href="#a8" class="a5">ygsdcugk</a>
+            <div class="sm6"><a href="#a9" class="a6">ABOUT</a>
+                <div class="sub6">
+                    <a href="projAbout.html" class="sbm7">KNOW MORE</a>
+                    <a href="#a11" class="sbm8">BRANCHES</a>
+                </div>
+            </div>
+            <div class="sm7"><a href="#a12" class="a7">LOGIN/SIGNUP</a>
+                <div class="sub7">
+                    <a href="projLogin.html" class="sbm9">LOGIN</a>
+                    <a href="projReg.html" class="sbm10">SIGN UP</a>
+                </div>
+        </nav>
+        <div class="cont1">
+            <h2>GALLERY</h2>
+            <div class="cont2">
+                <div class="g1">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-30 155618.png"/>
+                    <p>Hon'ble Home Minister at Inauguration of I4C on 10th January 2020</p>
+                </div>
+                <div class="g2">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-23 162029.png"/>
+                    <p>Hon'ble Home Minister at National Conference on 18th June 2022</p>
+                </div>
+                <div class="g3">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-30 160502.png"/>
+                    <p>Union Home Secretary presenting a planter to Hon'ble Home Minister on 18th June 2022</p>
+                </div>
+                <div class="g4">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-23 162101.png"/>
+                    <p>Union Home Secretary releasing I4C Newsletter on 3rd January 2022</p>
+                </div>
+                <div class="g5">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-30 160517.png"/>
+                    <p>National Conference on Cyber Safety & National Security on 18th June 2022</p>
+                </div>
+                <div class="g6">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-30 160537.png"/>
+                    <p>International Cooperation on Cyber Issues</p>
+                </div>
+                <div class="g7">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-30 160558.png"/>
+                    <p>Seminar on Securing Cyberspace</p>
+                </div>
+                <div class="g8">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-30 160612.png"/>
+                    <p>Workshop for Senior Police Officers at IIPA from 7th March 2022 to 11th March 2022</p>
+                </div>
+                <div class="g9">
+                    <img src="screenshots/Screenshots/Screenshot 2023-05-30 160634.png"/>
+                    <p>SCO RATS Seminar 7th December</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foot">
+                <a class="sbm10" href="projContact.html">Agencies</a>
+                <a class="sbm11" href="#7">Operations</a>
+                <a class="sbm12" href="projReg.html">New to work</a>
+                <a class="sbm13" href="projFAQ.html">FAQ</a>
+                <a class="sbm14" href="projDisclaimer.html">Disclaimer</a>
+                <div class="icon">
+                    <a href="#a13"><i class="fa-brands fa-twitter" style="padding: 7px; font-size: 23px;"></i></a>
+                    <a href="#a14"><i class="fa-brands fa-facebook" style="padding: 7px; font-size: 23px;"></i></a>
+                    <a href="#a15"><i class="fa-brands fa-instagram" style="padding: 5px; font-size: 23px;"></i></a>
+                    <a href="#a16"><i class="fa-brands fa-github" style="padding: 5px; font-size: 23px;"></i></a>
+                </div>
+                <div class="f1">This website is Best viewed in Mozilla Firefox, Google Chrome.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1F989345</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

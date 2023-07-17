@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .icons{
+            display: flex;
+            column-gap: 25px;
+        }
+        .icon{
+            display: inline-flex;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            outline: 2px solid #fff;
+            transition-property: outline-offset,outline-color,background-color;
+            transition-duration: 0.25s;
+        }
+        .icon:hover{
+            outline-offset: 4px;
+        }
+        .icon i{
+            margin: auto;
+        }
+        .icon:hover i{
+            animation: shake 0.25s;
+        }
+        @keyframes shake {
+            10%{
+                transform: rotate(15deg);
+            }
+            20%{
+                transform: rotate(-15deg);
+            }
+            30%{
+                transform: rotate(15deg);
+            }
+            40%{
+                transform: rotate(-15deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="icons">
+        <div class="icon">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </div>
+</body>
+</html>
